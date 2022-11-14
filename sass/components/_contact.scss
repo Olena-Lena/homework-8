@@ -1,0 +1,68 @@
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;}
+
+.contact__list {
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  }
+
+  .contact__mail {
+    display: flex;
+    align-items: center;
+    
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color-font);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    
+    .contact__mail:hover,
+    .contact__mail:focus {
+    color: var(--color-accent)
+    }
+    
+    .contact__number {
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color-font);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    
+    .contact__number:hover,
+    .contact__number:focus 
+    {color: var(--color-accent);}
+    
+    .mail-svg {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+    }
+    
+    
+    .mail:hover,
+    .mail:focus {
+    color: var(--color-accent);
+    fill: #2196F3;
+    }
+    
+    .tel-svg {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+    }
+    
+    .mail-svg:hover,
+    .mail-svg:focus {
+      fill: var(--color-accent);
+    }
+    
+    .tel-svg:hover,
+    .tel-svg:focus {
+      fill: var(--color-accent);}
