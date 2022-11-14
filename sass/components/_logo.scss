@@ -1,13 +1,21 @@
 .logo {
-  margin-right: 94px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
 
   font-family: 'Raleway', sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
   line-height:1.19;
+
+  @media  screen and (min-width:1600px) {
+    width: 1600px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 215px;
+    
+  }
 }
 
 .logo__main {color:var(--color-accent)}

@@ -48,4 +48,59 @@ footer {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --basic-color-font: #212121;
+  --secondary-color-font: #757575;
+  --color-accent: #2196F3;
+  --secondary-color-accent:#FFFFFF;
+  --main-beckground-color:#E5E5E5;
+}
+
+.visyally-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    width: 1600px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 215px;
+  }
+}
+
+.logo__main {
+  color: var(--color-accent);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: "Raleway";
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-accent);
 }/*# sourceMappingURL=main.css.map */
