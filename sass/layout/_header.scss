@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   height: 60px;
   }
 
@@ -12,8 +11,13 @@
     overflow: auto;
   }
 
-  .modal-menu-icon {
-  
+  .conteiner-mobail-menu {
+  position: relative;
+  }
+  .mobail-menu-icon-close {
+  position: absolute;
+  right: 26;
+  top: 20;
   }
   
   .nav__list {
