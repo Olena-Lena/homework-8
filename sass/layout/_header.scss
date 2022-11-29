@@ -53,36 +53,24 @@
   pointer-events: auto;
 }
 
-/*.header {
-          height: 60px;
-          }
-          
-          .navigation {
-          position: relative;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          }
-          
-          .mobail-menu {
-          position: absolute;
-          
-          }
-          
-        
-      
-          .mobail-button-close {
-          
-          }
-          
-            .mobail-menu-icon-close {
-            position: absolute;
-            right: 26;
-            top: 20;
-            }
-            
-         */
-    
+.nav__list {
+font-family: var(--main-font-family);
+font-style: normal;
+@include font(500, 40px, 1.17);
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.contact__number {
+font-family: var(--main-font-family);
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+letter-spacing: 0.02em;
+
+color: #2196F3;}
+
 @media screen and (min-width:768px) {
  
 }

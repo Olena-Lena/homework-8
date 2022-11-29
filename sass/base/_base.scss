@@ -11,6 +11,8 @@ padding-left: 0;
 
 img {
 display: block;
+max-width: 100%;
+height: auto;
 }
 
 address {font-style: normal;}
@@ -31,6 +33,6 @@ background: #2F303A;
 
 .link {text-decoration: none;}
 
-.section {
+/*.section {
   padding-top: 94px;
-  padding-bottom: 94px;}
+  padding-bottom: 94px;}*/

@@ -11,6 +11,8 @@ ul, ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -37,11 +39,9 @@ footer {
   text-decoration: none;
 }
 
-.section {
+/*.section {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-
+  padding-bottom: 94px;}*/
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
@@ -123,6 +123,17 @@ footer {
   color: var(--secondary-color-accent);
 }
 
+.subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  font-family: var(--main-font-family);
+  text-transform: uppercase;
+  color: var(--basic-color-font);
+  margin-bottom: 10px;
+}
+
 .conteiner__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,37 +196,58 @@ footer {
   pointer-events: auto;
 }
 
-/*.header {
-          height: 60px;
-          }
+.nav__list {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
 
-          .navigation {
-          position: relative;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          }
+.contact__number {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
 
-          .mobail-menu {
-          position: absolute;
-
-          }
-
-
-
-          .mobail-button-close {
-
-          }
-
-            .mobail-menu-icon-close {
-            position: absolute;
-            right: 26;
-            top: 20;
-            }
-
-         */
 @media screen and (max-width: 767px) {
   .field-section {
     display: none;
   }
+}
+.benefits-items-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F5F4FA;
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
