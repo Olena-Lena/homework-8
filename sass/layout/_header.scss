@@ -14,7 +14,8 @@
 .mobail-button {
   background-color: transparent;
   border: none;
-  padding: 0;
+  top: 10px;
+  right: 15px;
   line-height: 0;
   }
 
@@ -33,14 +34,17 @@
 
 .mobail-button-close {
   position: absolute;
-  padding-top: 10px;
-  padding-right: 15px;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
 }
 
+.mobail-button-close:active {
+  fill:#2196F3;
+}
 .conteiner__mobail {
   position: relative;
   padding-top: 48px;
@@ -53,7 +57,7 @@
   pointer-events: auto;
 }
 
-.nav__list {
+.nav__item {
 font-family: var(--main-font-family);
 font-style: normal;
 @include font(500, 40px, 1.17);
