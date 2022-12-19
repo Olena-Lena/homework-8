@@ -19,6 +19,10 @@
   line-height: 0;
   }
 
+.conteiner__mobail {
+  position: relative;
+}
+
 .mobail-menu {
   position: absolute;
   top: 0;
@@ -42,10 +46,6 @@
   line-height: 0;
 }
 
-.mobail-button-close:active {
-  fill:#2196F3;
-}
-
 .conteiner__mobail {
   position: relative;
   padding-top: 48px;
@@ -66,6 +66,10 @@ font-style: normal;
 @include font(500, 40px, 1.17);
 letter-spacing: 0.02em;
 color: #212121;
+}
+
+.nav__item:focus {
+  color: var(--color-accent);
 }
 
 .nav__list:not(:last-child) {
@@ -103,7 +107,14 @@ color: #757575;
 
 .mail-svg {display: none;}
 
-.mobail-social:not(:last-child)::after {
+.mobail-social {
+display: flex;
+}
+
+.mobail-social-item:not(:last-child)::after {
+  content: "";
+  margin-left: 10px;
+  margin-right: 10px;
   width: 22px;
   height: 0px;
   border: 1px solid rgba(33, 33, 33, 0.2);
