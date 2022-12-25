@@ -2,7 +2,35 @@
 
   &__photo {
     display: flex;
+    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
   }
 }
+
+.subtitle-team {
+margin-bottom: 10px;
+font-family: var(--main-font-family);
+font-style: normal;
+@include font(500, 16px, 1.18);
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.text-team {
+  margin-bottom: 16px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(400, 16px, 1.18);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team-items-social {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
