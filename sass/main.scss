@@ -4,13 +4,17 @@
 @import './utils/visyally-hidden';
 @import './utils/mixin';
 @import './utils/is-active';
+@import './utils/placeholder';
 @import './components/logo';
 @import './components/main-title';
 @import './components/title-h2';
 @import './components/subtitle-h3';
+@import './components/social';
 @import './layout/header';
 @import './layout/hero';
+@import './layout/form-hero';
 @import './layout/field';
 @import './layout/benefit';
 @import './layout/team';
 @import './layout/client';
+@import './layout/footer';

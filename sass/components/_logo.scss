@@ -21,9 +21,6 @@
 .logo__main {color:var(--color-accent)}
 
 .footer-logo {
-  display: block;
-  margin-bottom: 20px;
-  
   @include font(700, 26px, 1.19);
   font-family: 'Raleway';
   font-style: normal;
