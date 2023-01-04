@@ -270,6 +270,8 @@ footer {
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .mobail-menu.is-open {
     opacity: 1;
@@ -309,54 +311,47 @@ footer {
     letter-spacing: 0.02em;
     color: #2196F3;
   }
+  .nav__item {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .nav__item:focus {
+    color: var(--color-accent);
+  }
+  .nav__list:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .contact__list:not(:last-child) {
+    margin-top: 306px;
+    margin-bottom: 32px;
+  }
+  .contact__list:last-child {
+    margin-bottom: 64px;
+  }
+  .contact__number {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
+  .contact__mail {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
-.nav__item {
-  font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.nav__item:focus {
-  color: var(--color-accent);
-}
-
-.nav__list:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.contact__list:not(:last-child) {
-  margin-top: 306px;
-  margin-bottom: 32px;
-}
-
-.contact__list:last-child {
-  margin-bottom: 64px;
-}
-
-.contact__number {
-  font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-}
-
-.contact__mail {
-  font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
 @media screen and (min-width: 768px) {
   .mobail-button {
     display: none;
@@ -712,6 +707,17 @@ footer {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .benefits-items-svg {
+    width: 354px;
+    height: 120px;
+  }
+}
 .team {
   background: #F5F4FA;
 }
