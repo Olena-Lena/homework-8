@@ -6,6 +6,8 @@
   padding-bottom: 16px;
 } 
 
+@media screen and (max-width: 767px) {
+  
 .header {
   position: relative;
   height: 60px;
@@ -64,56 +66,11 @@ fill: #2196F3;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.nav__item {
-font-family: var(--main-font-family);
-font-style: normal;
-@include font(500, 40px, 1.17);
-letter-spacing: 0.02em;
-color: #212121;
-}
-
-.nav__item:focus {
-  color: var(--color-accent);
-}
-
-.nav__list:not(:last-child) {
-margin-bottom: 32px;
-}
-
-.contact__list:not(:last-child) {
-  margin-top: 306px;
-  margin-bottom: 32px;
-}
-
-.contact__list:last-child {
-  margin-bottom: 64px;
-}
-
-.contact__number {
-font-family: var(--main-font-family);
-font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: 40px;
-letter-spacing: 0.02em;
-
-color: #2196F3;}
-
 .tel-svg {display: none;}
-
-.contact__mail {
-font-family: var(--main-font-family);
-font-style: normal;
-@include font(500, 24px, 1.16);
-letter-spacing: 0.02em;
-color: #757575;
-}
 
 .mail-svg {display: none;}
 
-.mobail-social {
-display: flex;
-}
+.mobail-social {display: flex;}
 
 .mobail-social-item:not(:last-child)::after {
   content: "";
@@ -132,8 +89,79 @@ font-style: normal;
 letter-spacing: 0.02em;
 color: #2196F3;
 }
+}
+
+.nav__item {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(500, 40px, 1.17);
+  letter-spacing: 0.02em;
+  color: #212121;
+  }
+
+  .nav__item:focus {
+    color: var(--color-accent);
+  }
+  
+  .nav__list:not(:last-child) {
+  margin-bottom: 32px;
+  }
+  
+  .contact__list:not(:last-child) {
+    margin-top: 306px;
+    margin-bottom: 32px;
+  }
+  
+  .contact__list:last-child {
+    margin-bottom: 64px;
+  }
+  
+  .contact__number {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  
+  color: #2196F3;}
+  
+  .contact__mail {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  @include font(500, 24px, 1.16);
+  letter-spacing: 0.02em;
+  color: #757575;
+  }
 
 @media screen and (min-width:768px) {
- 
+  .mobail-button {display: none;}
+
+  .mobail-button-close {display: none;}
+
+  .mobail-social {display: none;}
+
+  .nav__menu {display: flex}
+
+  .nav__item {
+    @include font(500, 14px, 1.14);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header {
+    height: 80px;;
+    border: 1px solid #ECECEC;
+    }
+    
+    .nav__item.is-active::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 44px;
+    background: var(--color-accent);
+    border-radius: 2px;
+    }
 }
   
