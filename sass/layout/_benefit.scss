@@ -19,10 +19,14 @@ color: #757575;
 margin-bottom: 30px;
 }
 
+
+
 @media screen and (min-width: 768px) {
- 
+.field-section {display: none;}
+
 .benefits-list {
   display: flex;
+  gap: 30px;
 }
 
 .benefits-items-svg {

@@ -725,10 +725,14 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .field-section {
+    display: none;
+  }
   .benefits-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
   }
   .benefits-items-svg {
     width: 354px;
