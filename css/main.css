@@ -238,8 +238,9 @@ footer {
     right: 15px;
     line-height: 0;
   }
-  .mobail-button:hover {
-    fill: #2196F3;
+  .mobail-button:hover,
+.mobail-button:focus {
+    fill: var(--color-accent);
   }
   .conteiner__mobail {
     position: relative;
@@ -265,6 +266,10 @@ footer {
     border: none;
     padding: 0;
     line-height: 0;
+  }
+  .mobail-button-close:hover,
+.mobail-button-close:focus {
+    fill: var(--color-accent);
   }
   .conteiner__mobail {
     position: relative;
@@ -340,7 +345,7 @@ footer {
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--color-accent);
   }
   .contact__mail {
     font-family: var(--main-font-family);
@@ -431,6 +436,18 @@ footer {
   background: var(--color-accent);
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../img/hero-768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../img/hero-768.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../img/hero-768@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../img/hero-768@2x.jpg");
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -785,6 +802,11 @@ footer {
   width: 44px;
   height: 44px;
   fill: #AFB1B8;
+}
+
+.social-items:hover,
+.social-items:focus {
+  fill: var(--color-accent);
 }
 
 .client {

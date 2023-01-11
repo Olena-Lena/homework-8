@@ -35,3 +35,16 @@
   .modal-btn:hover,
   .modal-btn:focus
   {background: var(--color-accent);}
+
+
+@media screen and (min-width:768px) {
+   .hero {
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4)), 
+    url('../img/hero-768.jpg');}
+  
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { 
+    .hero {background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url('../img/hero-768@2x.jpg');}
+  }
+}

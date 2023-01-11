@@ -21,9 +21,10 @@
   line-height: 0;
   }
 
-.mobail-button:hover {
-fill: #2196F3;
-}
+  .mobail-button:hover,
+	.mobail-button:focus {
+    fill: var(--color-accent);
+	}
 
 .conteiner__mobail {
   position: relative;
@@ -50,6 +51,11 @@ fill: #2196F3;
   border: none;
   padding: 0;
   line-height: 0;
+}
+
+.mobail-button-close:hover,
+.mobail-button-close:focus {
+  fill: var(--color-accent); 
 }
 
 .conteiner__mobail {
@@ -126,7 +132,7 @@ color: #2196F3;
   line-height: 40px;
   letter-spacing: 0.02em;
   
-  color: #2196F3;}
+  color: var(--color-accent);}
   
   .contact__mail {
   font-family: var(--main-font-family);
