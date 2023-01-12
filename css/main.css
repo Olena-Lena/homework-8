@@ -813,6 +813,14 @@ footer {
   fill: var(--color-accent);
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
 .client {
   display: -webkit-box;
   display: -ms-flexbox;
