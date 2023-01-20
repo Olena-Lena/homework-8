@@ -39,9 +39,6 @@ footer {
   text-decoration: none;
 }
 
-/*.section {
-  padding-top: 94px;
-  padding-bottom: 94px;}*/
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
@@ -51,14 +48,14 @@ footer {
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 448px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 720px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -176,6 +173,11 @@ footer {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .subtitle {
+    text-align: left;
+  }
+}
 .footer-social-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,11 +369,6 @@ footer {
   .mobail-social {
     display: none;
   }
-  .nav__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .nav__item {
     font-weight: 500;
     font-size: 14px;
@@ -379,20 +376,34 @@ footer {
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header {
+  /*.header {
+    height: 80px;;
+    border: 1px solid #ECECEC;
+    }*/
+  .conteiner__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
     height: 80px;
     border: 1px solid #ECECEC;
   }
-  .nav__item.is-active::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    top: 44px;
-    background: var(--color-accent);
-    border-radius: 2px;
+  .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
+  /*.nav__item.is-active::after {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 44px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  }*/
 }
 .hero {
   margin-left: auto;
@@ -732,11 +743,16 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
   }
   .benefits-items-svg {
     width: 354px;
     height: 120px;
+  }
+  .benefits-items {
+    width: calc((100% - 30px) / 2);
   }
 }
 .team {
@@ -818,7 +834,12 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
+  }
+  .team__items {
+    width: calc((100% - 30px) / 2);
   }
 }
 .client {

@@ -26,12 +26,17 @@ margin-bottom: 30px;
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .benefits-items-svg {
   width: 354px;
   height: 120px;
+}
+
+.benefits-items {
+  width: calc((100% - 30px) / 2);
 }
   
 }
