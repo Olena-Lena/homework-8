@@ -106,7 +106,7 @@ color: #2196F3;
   letter-spacing: 0.02em;
   color: #212121;
   }
-
+  
   .nav__item:focus {
     color: var(--color-accent);
   }
@@ -127,11 +127,8 @@ color: #2196F3;
   .contact__number {
   font-family: var(--main-font-family);
   font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  @include font(500, 34px, 1.17);
   letter-spacing: 0.02em;
-  
   color: var(--color-accent);}
   
   .contact__mail {
@@ -156,21 +153,36 @@ color: #2196F3;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /*.header {
-    height: 80px;;
-    border: 1px solid #ECECEC;
-    }*/
+  .tablet-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .conteiner__header {
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    max-width: 1199px;
+    margin: 0px;
     height: 80px;
     border: 1px solid #ECECEC;
   }
 
   .nav__menu {
     display: flex;
+    margin-left: 94px;
+  }
+
+  .nav__list:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .contact {
+    margin-left: 114px;
+  }
+
+  .contact__number, .contact__mail {
+    @include font (500, 12px, 1.16);
+    color: #757575;
   }
  
     /*.nav__item.is-active::after {
