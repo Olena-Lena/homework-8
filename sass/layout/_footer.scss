@@ -128,5 +128,10 @@
   @media screen and (min-width:768px) {
     .footer-tablet {
       display: flex;
+      justify-content: space-between;
     }
+  }
+
+  @media screen and (min-width:1200px) {
+    
   }

@@ -192,10 +192,6 @@ footer {
   margin-bottom: 60px;
 }
 
-.footer-social {
-  margin-right: auto;
-}
-
 .social-footer {
   margin-right: 10px;
   width: 44px;
@@ -1177,5 +1173,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }/*# sourceMappingURL=main.css.map */
