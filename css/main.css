@@ -179,6 +179,11 @@ footer {
     text-align: left;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    text-align: center;
+  }
+}
 .footer-social-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -793,9 +798,62 @@ footer {
   background-color: #188CE8;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
+  .field-sectio {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
   .field-section {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .field-section {
+    display: contents;
+  }
+  .label {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color-accent);
+  }
+  .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .field-item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+  }
+  .thumb {
+    position: relative;
+  }
+  .label-item {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
   }
 }
 .benefits-items-svg {
@@ -830,9 +888,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .field-section {
-    display: none;
-  }
   .benefits-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -981,6 +1036,12 @@ footer {
   border: 1px solid var(--color-accent);
 }
 
+@media screen and (min-width: 1200px) {
+  .client {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .address {
   font-family: var(--main-font-family);
   font-style: normal;
@@ -1173,6 +1234,19 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

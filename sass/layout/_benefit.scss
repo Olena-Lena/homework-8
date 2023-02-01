@@ -19,10 +19,7 @@ color: #757575;
 margin-bottom: 30px;
 }
 
-
-
 @media screen and (min-width: 768px) {
-.field-section {display: none;}
 
 .benefits-list {
   display: flex;
@@ -37,6 +34,8 @@ margin-bottom: 30px;
 
 .benefits-items {
   width: calc((100% - 30px) / 2);
+}  
 }
-  
+
+@media screen and (min-width: 1200px) {
 }
