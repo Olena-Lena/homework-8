@@ -58,12 +58,10 @@ justify-content: space-between;
 
   .team__list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 
   .team__items {
-    width: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 120px)/4);
   }
   
 }

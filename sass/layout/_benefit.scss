@@ -38,4 +38,24 @@ margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
+  .benefits-list {
+    display: flex;
+  }
+
+  .benefits-items:not(:last-child) {
+    margin-right: 30px;}
+
+  .text {
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font (400, 14px, 1.71);
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+
+  .benefits-items-svg {
+    width: 270px;
+    height: 120px;
+  }
+  .benefits-list {display: flex;}
 }
