@@ -910,6 +910,9 @@ footer {
     display: -ms-flexbox;
     display: flex;
   }
+  .benefits-items {
+    width: 270px;
+  }
   .benefits-items:not(:last-child) {
     margin-right: 30px;
   }
@@ -1012,9 +1015,15 @@ footer {
     display: -ms-flexbox;
     display: flex;
   }
+  .team__items:not(:last-child) {
+    margin-right: 30px;
+  }
   .team__items {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    width: 270px;
+  }
+  .team-items-social {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .client {
