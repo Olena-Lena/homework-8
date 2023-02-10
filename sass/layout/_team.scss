@@ -64,13 +64,20 @@ justify-content: space-between;
     margin-right: 30px;
   }
 
-  .team__items {
-    width: 270px;
-  }
-
   .team-items-social {
     padding-left: 30px;
     padding-right: 30px;
   }
   
+}
+
+@media screen and (min-width: 1200px) {
+  .team__items {
+    width: 270px;
+  }
+
+  .team__items {
+    width: calc((100% - 30px) / 2);
+}
+
 }

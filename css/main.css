@@ -504,6 +504,11 @@ footer {
     border-radius: 2px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .nav__menu {
+    margin-right: 340px;
+  }
+}
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -1018,12 +1023,17 @@ footer {
   .team__items:not(:last-child) {
     margin-right: 30px;
   }
-  .team__items {
-    width: 270px;
-  }
   .team-items-social {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__items {
+    width: 270px;
+  }
+  .team__items {
+    width: calc((100% - 30px) / 2);
   }
 }
 .client {
