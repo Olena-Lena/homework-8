@@ -58,10 +58,12 @@ justify-content: space-between;
 
   .team__list {
     display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
   }
 
-  .team__items:not(:last-child) {
-    margin-right: 30px;
+  .team__items {
+    width: calc((100% - 30px) / 2);
   }
 
   .team-items-social {
@@ -75,9 +77,5 @@ justify-content: space-between;
   .team__items {
     width: 270px;
   }
-
-  .team__items {
-    width: calc((100% - 30px) / 2);
 }
 
-}

@@ -248,7 +248,7 @@ footer {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact__mail:hover,
-.contact__mail:focus {
+  .contact__mail:focus {
     color: var(--color-accent);
   }
   .contact__number {
@@ -266,20 +266,20 @@ footer {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact__number:hover,
-.contact__number:focus {
+  .contact__number:focus {
     color: var(--color-accent);
   }
   .mail:hover,
-.mail:focus {
+  .mail:focus {
     color: var(--color-accent);
     fill: #2196F3;
   }
   .mail-svg:hover,
-.mail-svg:focus {
+  .mail-svg:focus {
     fill: var(--color-accent);
   }
   .tel-svg:hover,
-.tel-svg:focus {
+  .tel-svg:focus {
     fill: var(--color-accent);
   }
 }
@@ -310,7 +310,7 @@ footer {
     line-height: 0;
   }
   .mobail-button:hover,
-.mobail-button:focus {
+  .mobail-button:focus {
     fill: var(--color-accent);
   }
   .conteiner__mobail {
@@ -339,7 +339,7 @@ footer {
     line-height: 0;
   }
   .mobail-button-close:hover,
-.mobail-button-close:focus {
+  .mobail-button-close:focus {
     fill: var(--color-accent);
   }
   .conteiner__mobail {
@@ -917,9 +917,7 @@ footer {
   }
   .benefits-items {
     width: 270px;
-  }
-  .benefits-items:not(:last-child) {
-    margin-right: 30px;
+    gap: 30px;
   }
   .text {
     font-family: "Roboto";
@@ -1019,9 +1017,12 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .team__items:not(:last-child) {
-    margin-right: 30px;
+  .team__items {
+    width: calc((100% - 30px) / 2);
   }
   .team-items-social {
     padding-left: 30px;
@@ -1031,9 +1032,6 @@ footer {
 @media screen and (min-width: 1200px) {
   .team__items {
     width: 270px;
-  }
-  .team__items {
-    width: calc((100% - 30px) / 2);
   }
 }
 .client {

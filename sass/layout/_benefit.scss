@@ -44,10 +44,8 @@ margin-bottom: 30px;
 
   .benefits-items {
     width: 270px;
+    gap: 30px;
   }
-
-  .benefits-items:not(:last-child) {
-    margin-right: 30px;}
 
   .text {
     font-family: 'Roboto';
